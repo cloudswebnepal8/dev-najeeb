@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar */
+nav{
+    background-color: #1f2b42;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:sticky;
+    top:0;
+    padding:15px;
+    
+}
+.logo{
+    
+    border: solid rgb(55, 65, 81);
+    width: 230px;
+    color:white;
+    background-color:rgb(36, 26, 70);
+    font-size:28px;
+    font-weight:bold;
+}
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+ nav ul li a:hover{
+    
+    background-color:rgb(251, 175, 113);
+ }
+ /* section */
+ .section{
+    min-height:100vh;
+    padding:100px 80px;
+ }
+ /* home section */
+ .home{
+background-color:#f3f4f6 ;
+display:flex;
+justify-content:space-between;
+align-items: center;
+gap:50px;
+ }
+
+ .left{
+    width:60%;
+ }
+.left{
+    width:60%;
+}
+.left h1{
+    font-size:70px;
+    color: #0f172a;
+    margin-bottom:30px;
+}
+
+.left p{
+    font-size:24px;
+    color:#0f172a;
+    line-height:35px;
+    margin-bottom: 20px;
+}
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.buttons button{
+    padding: 18px 30px;
+    background-color:#111827;
+    color:white;
+    border:none;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+.right img{
+    width: 350px;
+    height: 350px;
+    border-radius: 500%;
+    object-fit: cover;
+    margin-right: 20px;
+    
+}
+/* About Section */
+
+.about{
+    background-color: #d8d5a8;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+
+
+.about-btn,
+.skill-btn{
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+
+.name-box{
+    background-color: #172633;
+    color: white;
+    width:500px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.name-box h3{
+    font-size: 20px;
+}
+
+
+
+.about-text{
+    font-size: 25px;
+    line-height: 45px;
+    width: 1100px;
+    margin-bottom: 120px;
+}
+
+
+.skill-text{
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+
+
+.cards{
+    display: flex;
+    gap: 40px;
+}
+
+
+.card{
+    border: 1px solid white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+
+.card h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+.card p{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #374151;
+}
+/* Projects Section */
+
+.projects{
+    background-color: #162833;
+
+    min-height: 100vh;
+
+    padding: 100px 80px;
+}
+
+/* Project Button */
+
+.project-btn{
+    background-color: #d8d5a8;
+    color: black;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 15px 30px;
+
+    font-size: 22px;
+
+    margin-bottom: 60px;
+}
+
+/* Project Container */
+
+.project-container{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+/* Single Card */
+
+.project-card{
+    background-color: #1d313d;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid #324854;
+    
+}
+
+/* Image */
+
+.project-card img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+/* Content */
+
+.project-content{
+    padding: 30px;
+}
+
+.project-content h2{
+    color: white;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+.project-content p{
+    color: #d1d5db;
+
+    font-size: 24px;
+
+    line-height: 40px;
+
+    margin-bottom: 30px;
+}
+
+.project-content h3,
+.project-content h4{
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+/* Button */
+
+.project-content button{
+    background-color: #0f172a;
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+/* Responsive */
+
+@media(max-width: 1100px){
+
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px){
+
+    .projects{
+        padding: 60px 20px;
+    }
+
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    .project-content h2{
+        font-size: 30px;
+    }
+
+    .project-content p{
+        font-size: 20px;
+        line-height: 34px;
+    }
+}
+
+
+
+
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+    .left h1{
+        font-size:55px;
+    }
+
+    .about-text{
+        width:100%;
+    }
+
+    .cards{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .project-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    /* Navbar */
+
+    nav{
+        padding:20px;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+
+    .logo{
+        width:auto;
+        padding:10px;
+        font-size:22px;
+    }
+
+    /* Home */
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left{
+        width:100%;
+    }
+
+    .right{
+        width:100%;
+    }
+
+    .left h1{
+        font-size:50px;
+    }
+
+    .left p{
+        font-size:22px;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .right img{
+        width:300px;
+        height:300px;
+        margin-right:0;
+    }
+
+    /* About */
+
+    .about{
+        padding:60px 30px;
+    }
+
+    .name-box{
+        width:100%;
+    }
+
+    .about-text{
+        width:100%;
+        font-size:22px;
+    }
+
+    .skill-text{
+        font-size:24px;
+    }
+
+    .cards{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:500px;
+    }
+
+    .card h2{
+        font-size:28px;
+    }
+
+    .card p{
+        font-size:22px;
+    }
+
+    /* Projects */
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    /* Navbar */
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    /* Sections */
+
+    .section,
+    .about,
+    .projects{
+        padding:60px 20px;
+    }
+
+    /* Home */
+
+    .left h1{
+        font-size:38px;
+        line-height:50px;
+    }
+
+    .left p{
+        font-size:18px;
+        line-height:30px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .buttons button{
+        width:100%;
+        max-width:250px;
+    }
+
+    .right img{
+        width:230px;
+        height:230px;
+    }
+
+    /* About */
+
+    .about-btn,
+    .skill-btn,
+    .project-btn{
+        font-size:18px;
+        padding:12px 20px;
+    }
+
+    .name-box h3{
+        font-size:18px;
+    }
+
+    .about-text{
+        font-size:18px;
+        line-height:32px;
+    }
+
+    .skill-text{
+        font-size:20px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+    .card p{
+        font-size:18px;
+    }
+
+    /* Projects */
+
+    .project-content{
+        padding:20px;
+    }
+
+    .project-content h2{
+        font-size:26px;
+    }
+
+    .project-content p{
+        font-size:18px;
+        line-height:30px;
+    }
+
+    .project-content h3,
+    .project-content h4{
+        font-size:18px;
+    }
+
+    .project-content button{
+        width:100%;
+    }
+}
+
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+    .left h1{
+        font-size:30px;
+        line-height:42px;
+    }
+
+    .left p{
+        font-size:16px;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .right img{
+        width:180px;
+        height:180px;
+    }
+
+    .about-text,
+    .skill-text,
+    .card p,
+    .project-content p{
+        font-size:16px;
+    }
+
+    .card h2,
+    .project-content h2{
+        font-size:22px;
+    }
+}
+
+@media(max-width:768px){
+
+    .home{
+        flex-direction: column-reverse;
+    }
+
+}
